@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Protest+Revolution&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body{
+            
+            background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url("21097.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        img{
+            height: 50px;
+        }
+        .home{
+            height: 100vh;
+        }
+        li{
+            display: flex;
+            
+        }
+        .nav-link:hover{
+            color: #df182f !important;
+
+        }
+        .card:hover img{
+            transform: scale(1.2);
+            transition: 0.7s;
+        }
+        .card:hover{
+            transform: scale(0.93);
+            background-color: rgb(221, 212, 212);
+            color: #dd172e ;
+            transition: 0.7s;
+        }
+        .mainbox {
+          font-family: 'Bree Serif', serif;
+          font-family: 'Protest Revolution', sans-serif;
+          font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox mainbox-sm mainbox-md mainbox-lg">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary " style="border-radius: 15px;background-color: rgba(235, 235, 235,0.7);">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="logo.gif" alt="s"></a>
+              <button class="navbar-toggler bg-secondery" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>               
+              <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                
+                <ul class="navbar-nav ">
+                  <li class="nav-item fst-italic fw-bolder">
+                    <a class="nav-link active" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item fst-italic fw-bolder">
+                    <a class="nav-link active" href="recent.html">Recent Movies</a>
+                  </li>
+                  <li class="nav-item dropdown fst-italic fw-bolder">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Genric
+                    </a>
+                    <ul class="dropdown-menu fst-italic fw-bolder">
+                      <li><a class="dropdown-item" href="Horrorlist.html">Thriller</a></li>
+                      <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+                      <li class="dropdown-item"><a href="adventure.html" style="text-decoration: none;">Adventure</a></li>
+                      <li><a class="dropdown-item" href="addmovie.html">Add Movies</a></li> 
+                    </ul>
+                  </li>
+                  <li class="nav-item fst-italic fw-bolder">
+                    <a class="nav-link active" href="toprating.html">
+                      Top Rating
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                <button class="btn btn-outline-success" type="submit" id="submit" style="margin-right: 20px;">Search</button>
+              </form>
+              <a href="sign up.html" class="btn btn-outline-danger">Sign out</a>
+            </div>
+          </nav>
+
+
+    <!-- add slide show -->
+    <!-- <h2 class="h2 text-white fst-italic">Up Coming Movies </h2><br> 
+    <div class="card">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="height: 400px;">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="recent1.jpg" class="d-block w-100" alt="apes">
+          </div>
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="recent2.jpg" class="d-block w-100" alt="godzila">
+          </div>
+          <div class="carousel-item active">
+            <img src="recent3.jpg" class="d-block w-100" alt="beekeeper">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    </div> -->
+
+          <div class="row justify-content-center mt-4" id="allMovies"></div> 
+    
+        </div>
+    <script src="new.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>   
+</body>
+</html>
